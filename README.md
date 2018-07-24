@@ -30,3 +30,15 @@ curl -sSL https://pidrivr.f0wl.cc/install.sh | sudo bash
 3. Install all software dependencies (including Kismet)
 4. Install the PaPiRus Software for the e-Paper Display
 5. Download Patrick Salecker's .netxml to .kml script
+
+Please remember to enable SPI and I²C via ```sudo rasp-config```, otherwise the e-Paper display will not work.
+
+Next: Run ```sudo nano /etc/default/gspd``` to edit the configuration file of the gps daemon and paste the following:
+```
+START_DAEMON="true"
+GPSD_OPTIONS="-n"
+DEVICES="/dev/ttyUSB0" 
+USBAUTO="true"
+GPSD_SOCKET="/var/run/gpsd.sock"
+```
+To successfully run kismet we have to edit its configuration file as well by typing ```sudo nano /usr/local/etc/kismet.conf```. Press Ctrl+W on your Keyboard and type ```ncsource=```. For Raspberry Pis with integrated Wireless-LAN capabilities ```wlan0``` has to be changed to ```wlan1```. After that, press Ctrl+W again and search for ```logtypes=```. We only need ```netxml,gpsxml``` and you can delete the remaining logtypes.
