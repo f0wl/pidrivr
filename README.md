@@ -33,7 +33,7 @@ curl -sSL https://pidrivr.f0wl.cc/install.sh | sudo bash
 
 Please remember to enable SPI and I²C via ```sudo rasp-config```, otherwise the e-Paper display will not work.
 
-Next: Run ```sudo nano /etc/default/gspd``` to edit the configuration file of the gps daemon and paste the following:
+Next: Run ```sudo nano /etc/default/gspd``` to edit the configuration file of the gps daemon and make sure the following values are set:
 ```
 START_DAEMON="true"
 GPSD_OPTIONS="-n"
