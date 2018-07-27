@@ -1,6 +1,5 @@
-# PiDrivR
+# PiDrivR ![status](https://pidrivr.f0wl.cc/img/status.svg)
 :car: :satellite: A wardriving companion featuring the RaspberryPi 3B+ and PaPiRus e-paper Display
-![status](https://pidrivr.f0wl.cc/img/status.svg)
 ![Image of PiDrivR](https://pidrivr.f0wl.cc/img/pidrivr-small.png)
 
 Hey, thanks for checking out PiDrivR, yet another wardriving script for the RaspberryPi. As you can see in the image above it is tailored to run with the PiSupply "PaPiRus" e-Paper Screen (for me it is the 2.0" Version). If you like the Idea of wardriving with the Raspi, but you don't want to spend your money on the e-Paper Display here are some alternatives that use a different or no screen:
