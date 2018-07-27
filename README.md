@@ -1,5 +1,5 @@
 # PiDrivR
-![status](https://pidrivr.f0wl.cc/img/not working-stil errors to fix-red.svg)
+![status](https://pidrivr.f0wl.cc/img/status.svg)
 :car: :satellite: A wardriving companion featuring the RaspberryPi 3B+ and PaPiRus e-paper Display
 
 ![Image of PiDrivR](https://pidrivr.f0wl.cc/img/pidrivr-small.png)
